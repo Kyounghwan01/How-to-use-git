@@ -1,12 +1,10 @@
 # How-to-use-git
 코드 공유 시스템 git의 작동 원리와 사용법
 
+
 ## Getting Started
 프로젝트내 작업을 효율적으로 공부하기 위해 사용함
 
-### Prerequisites
-
-git이 설치되어야 함. 
 
 
 ## Running the tests
