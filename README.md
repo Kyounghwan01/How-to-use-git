@@ -128,6 +128,34 @@ exp를 master로 병합 -> master로 이동후 git merge exp
 Branch 삭제
 Git branch -d exp
 ```
+```
+commit 27dd7510e7d3b05de3b876a48734cf7904af3cad (HEAD -> exp)
+Author: kyounghwan <osc9245@naver.com>
+Date:   Tue Apr 2 17:53:49 2019 +0900
+
+    4
+
+commit 6161968e05f3d1bb99860d520defa3e7220ca4f1
+Author: kyounghwan <osc9245@naver.com>
+Date:   Tue Apr 2 17:50:48 2019 +0900
+
+    3
+
+commit 1864c7604f1f4545fdadb55a6794a7b19e97017a (master)
+Author: kyounghwan <osc9245@naver.com>
+Date:   Tue Apr 2 17:46:04 2019 +0900
+
+    2
+
+commit 02186538a07c0f5fee511046e9b9661d54ffe41c
+Author: kyounghwan <osc9245@naver.com>
+Date:   Tue Apr 2 17:45:22 2019 +0900
+
+    1
+```
+> Head : 현재 내가 접속한 branch 이름 (master브런치는 2번 commit이 가장 최신이다, exp브런치는 4번 commit이 최신이다)
+
+
 
 ## 업데이트 내역
 
