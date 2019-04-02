@@ -15,9 +15,15 @@ git
 ```
 ## git init
 > 버전관리를 위한 초기설정, init시 해당 파일에서 ls-al을 하면 .git(해당파일 버전관리에 대한 모든 정보)파일이 생성되어 있다.
+```
+git init
+```
 
 ## git config --global user.email youremail@email-address
 > 깃 처음 이용하기 전 해당 파일에 대해 작성자가 누군지 명시한다. 
+```
+git config --global user.email noh5524@gmail.com
+```
 
 ## git add
 > 해당 파일을 버전관리 시작하겠다. add 명령어 이전, 파일이 변경된 부분에 대해서는 버전관리 되지 않는다. 
@@ -26,11 +32,18 @@ git
 
 > 해당 파일이 재 수정되면 다시 git add (파일 이름) 해야 함.
 
+```
+git add . 
+git add f1.txt
+```
 ## git statue
 > git 저장소의 상태를 관찰한다
 
 > 모든 정보가 commit되면 아무 정보도 나오지 않는다. git add를 하지 않는 비관리된 파일(untracked file), 관리 되는 파일이나 아직 add 하지 않은 보여준다. 
 
+```
+git statue
+```
 
 ## 업데이트 내역
 
