@@ -45,6 +45,50 @@ git add f1.txt
 git statue
 ```
 
+## git log
+> 저장소에 바뀐 내역을 보여 준다 .
+```
+git log 
+
+commit edb62babe8ba47c9500a640a88a04329589ea1e1 (HEAD -> master)
+Author: kyounghwan <osc9245@naver.com>
+Date:   Tue Apr 2 12:52:38 2019 +0900
+
+    5
+
+commit ed76de3a174013806a4eb30913ad07fda3c4d755
+Author: kyounghwan <osc9245@naver.com>
+Date:   Mon Apr 1 21:04:34 2019 +0900
+
+    4
+```
+
+> commit 옆 주소는 커밋 주소이며, git log 주소 입력시 이 커밋 주소 이전의 커밋 메세지를 다 불러온다.<br>
+커밋 메세지 사이 정보를 가져오고 싶을 때는 아래와 같이 입력하면 된다.
+```
+git diff 주소..주소
+```
+## git log -p
+> 커밋 내용을 불러오 되 커밋으로 인해 바뀐 부분까지 불러오고 싶을때 
+```
+git log -p 
+
+commit ce70f1461d923988a589da5f9d61117d6c85a226 (HEAD -> master)
+Author: kyounghwan <osc9245@naver.com>
+Date:   Tue Apr 2 13:48:37 2019 +0900
+
+    6
+
+diff --git a/f1.txt b/f1.txt
+index d9f32b3..659e266 100644
+--- a/f1.txt
++++ b/f1.txt
+@@ -1,2 +1,2 @@
+-f1.txt : 5
++f1.txt source : 5
+ 
+```
+
 ## 업데이트 내역
 
 * 0.2.1
