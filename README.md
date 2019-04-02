@@ -36,6 +36,14 @@ git config --global user.email noh5524@gmail.com
 git add . 
 git add f1.txt
 ```
+## git commit
+> add된 파일을 버전관리 실행한다.
+```
+git commit -a : add없이 방금 수정한 파일을 바로 commit 시켜준다
+git commit -m : 커밋창 없이 바로 실행
+git commit -am “11” : 바로 올린다. (add 명령어를 한번 이상 실시한 파일만 사용 가능)
+```
+
 ## git statue
 > git 저장소의 상태를 관찰한다
 
@@ -69,7 +77,7 @@ Date:   Mon Apr 1 21:04:34 2019 +0900
 git diff 주소..주소
 ```
 ## git log -p
-> 커밋 내용을 불러오 되 커밋으로 인해 바뀐 부분까지 불러오고 싶을때 
+> 커밋 내용을 불러오되 커밋으로 인해 바뀐 부분까지 불러오고 싶을때 
 ```
 git log -p 
 
@@ -91,6 +99,12 @@ index d9f32b3..659e266 100644
 
 ## git diff
 > 바로 이전 수정한 작업을 보여준다. 커밋 이전의 파일만 나옴(git add시 git diff 하면 정보 안나옴)
+
+## git reset vs revert
+> 과거로 돌아가 commit을 취소한다(.git 파일 백업하고 실시할 것)<br>
+주의 : 원격저장소에 코드 공유한 경우 절대 reset 명령어 실행하면 안된다. 내 컴퓨터에 버전 관리할때만 실행
+
+> git revert : 커밋을 취소하면서 새로운 버전을 생성한다. 
 
 ## 업데이트 내역
 
