@@ -13,6 +13,10 @@ terminal에서 git 타이핑시 설치하라는 정보가 없으면 끝.
 ```
 git
 ```
+## git 작동 원리
+
+> git add 실행시 : 내부적으로 index, object 파일 생성된다 
+
 ## git init
 > 버전관리를 위한 초기설정, init시 해당 파일에서 ls-al을 하면 .git(해당파일 버전관리에 대한 모든 정보)파일이 생성되어 있다.
 ```
@@ -105,6 +109,25 @@ index d9f32b3..659e266 100644
 주의 : 원격저장소에 코드 공유한 경우 절대 reset 명령어 실행하면 안된다. 내 컴퓨터에 버전 관리할때만 실행
 
 > git revert : 커밋을 취소하면서 새로운 버전을 생성한다. 
+
+## branch 
+### branch 쓰는 이유 
+> 여러 클라이언트의 요구사항이 달라지므로 하나의 파일을 분개하는 경우 사용
+### command
+```
+Git branch exp (exp 브랜치를 만든다). —> 새로운 브랜치를 만들면 이전 master 브랜치 복사한다. 
+Git checkout exp : exp브런치를 사용한다.
+Git log —branches —decorate —graph : 각 브런치 별 가진 commit를 본다
+Git log —branches —decorate —graph —online
+Git log -p master..exp : master에는 없고 exp에는 있는 것 소스코드까지 나옴(master가 exp의 파일 다 가지고있으면 아무것도 안나옴)
+Git diff master..exp : 있고 없고의 차이점을 알려준다 (소스코드 안의 차이 보여줌)
+
+Git 병합
+exp를 master로 병합 -> master로 이동후 git merge exp
+
+Branch 삭제
+Git branch -d exp
+```
 
 ## 업데이트 내역
 
