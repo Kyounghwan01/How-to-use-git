@@ -168,10 +168,10 @@ git log를 통해 commit의 정보를 확인하고 선택적으로 날짜를 임
    1. 바꾸고자 하는 commit날짜의 이전 날짜를 기준으로 명령어 넣는다
 
    2. ```
-      git rebase -i 4bfdbb333398a1d67e42c988ebeb79c1cd890c32
+      git rebase -i edaba97bce2ad33494381d45d29caa70b8191b1e
       ```
 
-   3. 
+   3. rebase가 안된다??
 
 
 
