@@ -167,11 +167,17 @@ git log를 통해 commit의 정보를 확인하고 선택적으로 날짜를 임
 
    1. 바꾸고자 하는 commit날짜의 이전 날짜를 기준으로 명령어 넣는다
 
-      ```
+      ```js
       git rebase -i edaba97bce2ad33494381d45d29caa70b8191b1e
       ```
 
-   3. 왜?
+   2. pick을 edit으로 바꾼다
+   
+   3. Amend 방식으로 날짜를 바꿈 
+   
+      ```
+      git commit --amend --no-edit --date "바꿀날짜 "
+      ```
 
 
 
