@@ -163,7 +163,7 @@ Date:   Tue Apr 2 17:45:22 2019 +0900
 
 git log를 통해 commit의 정보를 확인하고 선택적으로 날짜를 임의적으로 바꾼다
 
-1. 직접수정 : rebase 명령어로 바꿈 
+직접수정 : rebase 명령어로 바꿈 
 
    1. 바꾸고자 하는 commit날짜의 이전 날짜를 기준으로 명령어 넣는다
 
@@ -177,6 +177,10 @@ git log를 통해 commit의 정보를 확인하고 선택적으로 날짜를 임
    
       ```
       git commit --amend --no-edit --date "바꿀날짜 "
+      ```
+   4. push
+      ```
+      git push --set-upstream origin master
       ```
 
 
