@@ -1,6 +1,10 @@
 # How-to-use-git
 코드 공유 시스템 git의 작동 원리와 사용법
 
+[TOC]
+
+
+
 
 ## Getting Started
 프로젝트내 작업을 효율적으로 versioning 하기 위해 사용함
@@ -154,6 +158,22 @@ Date:   Tue Apr 2 17:45:22 2019 +0900
     1
 ```
 > Head : 현재 내가 접속한 branch 이름 (master브런치는 2번 commit이 가장 최신이다, exp브런치는 4번 commit이 최신이다)
+
+## git 시간 조작
+
+git log를 통해 commit의 정보를 확인하고 선택적으로 날짜를 임의적으로 바꾼다
+
+1. 직접수정 : rebase 명령어로 바꿈 
+
+   1. 바꾸고자 하는 commit날짜의 이전 날짜를 기준으로 명령어 넣는다
+
+   2. ```
+      git rebase -i 4bfdbb333398a1d67e42c988ebeb79c1cd890c32
+      ```
+
+   3. 
+
+
 
 
 
